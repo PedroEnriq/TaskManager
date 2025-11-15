@@ -1,0 +1,186 @@
+.task-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb; 
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem; 
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); 
+  animation: cardFadeInSlide 0.5s ease-out; 
+  transition: box-shadow 0.3s ease;
+  position: relative; 
+}
+
+.task-card h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ef4444; 
+  color: white; 
+  border: none;
+  border-radius: 6px; 
+  padding: 8px 12px; 
+  cursor: pointer;
+  font-size: 0.9rem; 
+  font-weight: 600; 
+  opacity: 0.9; 
+  transition: opacity 0.2s, background-color 0.2s;
+  line-height: 1; 
+  z-index: 5; 
+  display: flex; 
+  align-items: center;
+  gap: 5px; 
+}
+
+.delete-btn:hover {
+  opacity: 1;
+  background-color: #dc2626; 
+}
+
+
+.task-card .task-desc {
+  color: #6b7280;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  cursor: pointer; 
+}
+
+.task-card .task-title-input,
+.task-card .task-desc-input {
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px 8px;
+  font-family: inherit;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: white; 
+  color: #1f2937; 
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.task-card .task-title-input {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.task-card .task-desc-input {
+  font-size: 1rem;
+  font-weight: 400;
+  resize: vertical;
+  min-height: 50px;
+  margin-bottom: 1rem;
+}
+
+.task-card .task-title-input:focus,
+.task-card .task-desc-input:focus {
+  outline: 2px solid #3b82f6; 
+  border-color: #3b82f6;
+  background-color: #f8fbff; 
+}
+
+.task-card .task-title-input::placeholder,
+.task-card .task-desc-input::placeholder {
+  color: #9ca3af; 
+  font-weight: 400; 
+  opacity: 1; 
+}
+
+.task-card .task-title-input::placeholder {
+    font-weight: 600; 
+}
+
+
+.task-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.member-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; 
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #d1d5db; 
+  color: #4b5563;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: 2px solid white; 
+  margin-left: -8px; 
+  box-shadow: 0 0 0 1px #e5e7eb;
+}
+
+.team-member:first-child {
+  margin-left: 0;
+}
+
+.add-member-btn {
+  background: none;
+  border: none;
+  color: #3b82f6;
+  border-radius: 20px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-left: 1rem;
+  flex-shrink: 0;
+  transition: color 0.2s, text-decoration 0.2s;
+}
+
+.add-member-btn:hover {
+  text-decoration: underline;
+}
+
+.status {
+  color: white;
+  border-radius: 9999px; 
+  padding: 0.4rem 0.75rem;
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  min-width: 70px; 
+  text-align: center;
+  flex-shrink: 0; 
+}
+
+@keyframes cardFadeInSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); 
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

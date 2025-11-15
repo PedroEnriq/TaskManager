@@ -1,0 +1,70 @@
+.status-selector-container {
+  position: relative;
+  display: inline-block;
+  user-select: none;
+}
+
+.current-status-button {
+  border: none;
+  color: white;
+  border-radius: 9999px; 
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem; 
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  text-transform: capitalize;
+  min-width: 100px; 
+  text-align: center;
+}
+
+.current-status-button:hover {
+  opacity: 0.9;
+}
+
+.status-dropdown {
+  position: absolute;
+  right: 0;
+  top: 100%; 
+  margin-top: 8px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  min-width: 150px;
+  overflow: hidden;
+  animation: fadeIn 0.15s ease-out;
+}
+
+.status-option {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #1f2937;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.status-option:hover {
+  background-color: #f3f4f6;
+}
+
+.status-option.selected {
+  background-color: #e5e7eb;
+  font-weight: 600;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  background-color: #eef2f6; 
+  color: #1f2937;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.task-container {
+  width: 90%;
+  max-width: 500px; 
+  margin: 2rem; 
+  padding: 0; 
+  background-color: #ffffff;
+  border-radius: 16px; 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); 
+  overflow: hidden;
+}
+
+.task-header-box {
+  background-color: #e8f0fe; 
+  padding: 1.5rem 2rem;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.task-header-box h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1f2937;
+}
+
+.task-list-area {
+  padding: 2rem;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+}
