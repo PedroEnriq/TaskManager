@@ -1,11 +1,12 @@
-// App.jsx (MODIFICADO)
 import { useState } from "react";
 import "../src/App.css";
+import "../src/responsive.css";
 import TaskList from "./components/TaskList";
 import AddTaskButton from "./components/AddTaskButton";
 import MemberModal from "./components/MemberModal"; 
 import ConfirmationModal from "./components/ConfirmationModal";
 import { TASKS } from "./Data";
+
 
 
 function App() {
